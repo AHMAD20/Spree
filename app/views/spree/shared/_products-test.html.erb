@@ -1,0 +1,133 @@
+<div class="col-md-9 col-sm-9 slider-main">
+    <div>                            
+        <div class="product-block clearfix">
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="women-product-0">
+                    <div class="item-block clearfix" data-hook>
+                        <% products.each do |product| %> 
+                        <% url = spree.product_path(product, taxon_id: @taxon.try(:id)) %> 
+                        <div class="product-item custom-border">
+                            <ul class="products-row">
+                                <% cache(@taxon.present? ? [I18n.locale, current_pricing_options, @taxon, product] : [I18n.locale, current_pricing_options, product]) do %>
+                                <li class="image-block">
+                                                <span class="new offer">New</span>
+                                    <a href="#">
+                                        <span>
+                                        <%= link_to(render('spree/shared/image', image: product.display_image, size: :large, itemprop: "image"), url, itemprop: 'url') %>
+                                        <%#= image_tag("products/women/clothing/products-img-6.jpg",alt:"") %>
+                                        </span>
+                                    </a>
+                                    <a class="add-to-cart" href="#">Add to cart</a>
+                                    <div class="a-link">
+                                        <a class="l-1" href="#"><i class="fa fa-shopping-bag"></i></a>
+                                        <a class="l-2" href="#"><i class="fa fa-heart"></i></a>
+                                        <a class="l-3" href="#"><i class="fa fa-exchange"></i></a>
+                                        <a class="l-4" href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <div class="review_star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half"></i>
+                                    </div>
+                                </li>
+                                <li class="products-details">
+                                    <%= link_to truncate(product.name, length: 50), url, itemprop: "name", title: product.name %>
+                                    <% if price = product.price_for(current_pricing_options) %>
+                                        <span itemprop="price" content="<%= price.to_d %>">
+                                        <%= price.to_html %>
+                                        </span>
+                                    <% end %>
+                                    <span itemprop="priceCurrency" content="<%= current_pricing_options.currency %>"></span>
+                                </li>
+                                <% end %>
+                            </ul>
+                        </div>
+                        <!--<div class="product-item">
+                            <ul class="products-row">
+                                <li class="image-block">
+                                    <a href="#"><span><img src="images/products/women/footwear/products-img-7.jpg" alt=""/></span></a>
+                                    <a class="add-to-cart" href="#">Add to cart</a>
+                                    <div class="a-link">
+                                        <a class="l-1" href="#"><i class="fa fa-shopping-bag"></i></a>
+                                        <a class="l-2" href="#"><i class="fa fa-heart"></i></a>
+                                        <a class="l-3" href="#"><i class="fa fa-exchange"></i></a>
+                                        <a class="l-4" href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <div class="review_star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half"></i>
+                                    </div>
+                                </li>
+                                <li class="products-details">
+                                    <a href="#">
+                                        Professional Hxr-Mc2500 
+                                        Camcorder Camera
+                                    </a>
+                                    <span>$1600</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-item">
+                            <ul class="products-row">
+                                <li class="image-block">
+                                    <span class="pro offer">10% Off</span>
+                                    <a href="#"><span><img src="images/products/women/jewellery/products-img-8.jpg" alt=""/></span></a>
+                                    <a class="add-to-cart" href="#">Add to cart</a>
+                                    <div class="a-link">
+                                        <a class="l-1" href="#"><i class="fa fa-shopping-bag"></i></a>
+                                        <a class="l-2" href="#"><i class="fa fa-heart"></i></a>
+                                        <a class="l-3" href="#"><i class="fa fa-exchange"></i></a>
+                                        <a class="l-4" href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <div class="review_star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half"></i>
+                                    </div>
+                                </li>
+                                <li class="products-details">
+                                    <a href="#">Professional Hxr-Mc2500 Camcorder Camera</a>
+                                    <span>$1600</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-item">
+                            <ul class="products-row">
+                                <li class="image-block">
+                                    <a href="#"><span><img src="images/products/women/bags/products-img-9.jpg" alt=""/></span></a>
+                                    <a class="add-to-cart" href="#">Add to cart</a>
+                                    <div class="a-link">
+                                        <a class="l-1" href="#"><i class="fa fa-shopping-bag"></i></a>
+                                        <a class="l-2" href="#"><i class="fa fa-heart"></i></a>
+                                        <a class="l-3" href="#"><i class="fa fa-exchange"></i></a>
+                                        <a class="l-4" href="#"><i class="fa fa-search"></i></a>
+                                    </div>
+                                    <div class="review_star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half"></i>
+                                    </div>
+                                </li>
+                                <li class="products-details">
+                                    <a href="#">Professional Hxr-Mc2500 Camcorder Camera</a>
+                                    <span>$1600</span>
+                                </li>
+                            </ul>
+                        </div>-->
+                        <% end %>
+                        <% reset_cycle("classes") %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

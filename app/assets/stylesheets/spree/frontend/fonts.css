@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'robotobold';
+    src: asset-url('roboto-bold-webfont.html') format('woff2'),
+         asset-url('roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'roboto_condensedbold';
+    src: asset-url('robotocondensed-bold-webfont.html') format('woff2'),
+         asset-url('robotocondensed-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'roboto_condensedlight';
+    src: asset-url('robotocondensed-light-webfont.html') format('woff2'),
+         asset-url('robotocondensed-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'roboto_condensedregular';
+    src: asset-url('robotocondensed-regular-webfont.html') format('woff2'),
+         asset-url('robotocondensed-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotolight';
+    src: asset-url('roboto-light-webfont.html') format('woff2'),
+         asset-url('roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotomedium';
+    src: asset-url('roboto-medium-webfont.html') format('woff2'),
+         asset-url('roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotoregular';
+    src: asset-url('roboto-regular-webfont.html') format('woff2'),
+         asset-url('roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotothin';
+    src: asset-url('roboto-thin-webfont.html') format('woff2'),
+         asset-url('roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinsbold';
+    src: asset-url('poppins-bold-webfont.html') format('woff2'),
+         asset-url('poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinslight';
+    src: asset-url('poppins-light-webfont.html') format('woff2'),
+         asset-url('poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinsmedium';
+    src: asset-url('poppins-medium-webfont.html') format('woff2'),
+         asset-url('poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: asset-url('poppins-regular-webfont.html') format('woff2'),
+         asset-url('poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinssemibold';
+    src: asset-url('poppins-semibold-webfont.html') format('woff2'),
+         asset-url('poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

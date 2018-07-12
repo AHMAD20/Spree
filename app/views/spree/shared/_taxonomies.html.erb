@@ -1,0 +1,34 @@
+<div class="wrapper-slider clearfix">
+    <div class="spacer30"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 category">
+                    <div class="category-contant" data-no-turbolink>
+                        <h4 class="heading">Categories<i class="pull-right fa fa-angle-down"></i></h4>
+                        <a id="categories" class="mobile-categories" href="#"><span class="all_categories">Categories</span><i class="pull-right fa fa-angle-right"></i></a>
+                        <ul id="category-menu">
+                            <% max_level = Spree::Config[:max_level_in_taxons_menu] || 1 %>
+                            <% @taxonomies.each do |taxonomy| %>
+                                <li>
+                                    <%= link_to '#', method: :get do %>
+                                        <%= taxonomy.name %>
+                                        <i class="pull-right fa fa-angle-right"></i>
+                                        <%= taxons_tree(taxonomy.root, @taxon, max_level, 0) %>
+                                    <% end %>
+                                </li>
+                            <% end %>
+                        </ul>
+                    </div>
+                </div>
+                <% if index_page? %>
+                    <%= render partial: 'spree/shared/slider' %>
+                    <%= render partial: 'spree/shared/right-sidebar' %>                
+                <% else %>
+                    <% cache(cache_key_for_products) do %>
+                        <%= render partial: 'spree/shared/products-test', locals: { products: @products } %>
+                    <% end %>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>

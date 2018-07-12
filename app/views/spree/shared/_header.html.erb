@@ -1,0 +1,363 @@
+<!-- <header id="header" class="row" data-hook>
+  <figure id="logo" class="columns six" data-hook><%= logo %></figure>
+  <%#= render partial: 'spree/shared/nav_bar' %>
+  <%#= render partial: 'spree/shared/main_nav_bar' if store_menu? %>
+</header> -->
+<div id="top-bar">
+	<div class="container clearfix">
+		<!--Social icons-->
+		<div class="top-social-icons">
+			<ul class="clearfix">
+				<li>
+					<%= link_to("http://www.facebook.com",target: "_blank", class: "i-facebook") do %>
+						<i class="fa fa-facebook"></i>
+					<% end %>
+				</li>
+				<li>
+					<%= link_to("http://www.facebook.com",target: "_blank", class: "i-twitter") do %>
+						<i class="fa fa-twitter"></i>
+					<% end %>
+				</li>
+				<li>
+					<%= link_to("http://www.facebook.com",target: "_blank", class: "i-google") do %>
+						<i class="fa fa-google-plus"></i>
+					<% end %>
+				</li>
+				<li>
+					<%= link_to("http://www.facebook.com",target: "_blank", class: "i-instagram") do %>
+						<i class="fa fa-instagram"></i>
+					<% end %>
+				</li>
+				<li class="dropdown">
+					<a class="i-contact dropdown-toggle" data-toggle="dropdown" href="#">
+						<i class="fa fa-phone"></i>
+					</a>
+					<div class="i-hover dropdown-menu">
+						<span>111 1111 11</span>
+					</div>
+				</li>
+				<li class="dropdown">
+					<%= link_to("#", {class: "i-email dropdown-toggle", :"data-toggle" => "dropdown"}) do %>
+						<i class="fa fa-user"></i>
+					<% end %>
+					<div class="i-hover dropdown-menu">
+						<span>support@stw-store.com</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--End social icon-->
+		
+		<!-- Top link -->
+		<div class="top-links clearfix fright">
+			<ul>
+				<li class="dropdown">
+					<%= link_to("#", { "data-toggle" => "dropdown", class: "dropdown-toggle link-style"}) do %>
+						<i class="fa fa-user"></i>My Account
+					<% end %>
+					<ul class="dropdown-menu">
+						<li><%= link_to "My Account","#" %></li>
+						<li><%= link_to "My Wishlist","#" %></li>
+						<li><%= link_to "Checkout","#" %></li>
+						<li><%= link_to "Login","#" %></li>
+						<li>
+							<a href="#">
+								Currency
+								<span class="dropdown-top">USD</span>
+							</a>
+							<ul>
+								<li><%= link_to "Usd Dollar","#" %></li>
+								<li><%= link_to "Euro","#" %></li>
+								<li><%= link_to "Pound St.","#" %></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								Language
+								<span class="dropdown-top">eng</span>
+							</a>
+							<ul>
+								<li>
+									<%= link_to "#" do %>
+										England<%= image_tag("flags/england.jpg", alt:"England") %>
+									<% end %>
+								</li>
+								<li>
+									<%= link_to "#" do %>
+										England<%= image_tag("flags/england.jpg", alt:"England") %>
+									<% end %>
+								</li>
+								<li>
+									<%= link_to "#" do %>
+										Spain<%= image_tag("flags/spain.jpg", alt:"Spain") %>
+									<% end %>
+								</li>
+								<li>
+									<%= link_to "#" do %>
+										France<%= image_tag("flags/france.jpg", alt:"France") %>
+									<% end %>
+								</li>
+								<li>
+									<%= link_to "#" do %>
+										Italian<%= image_tag("flags/italy.jpg", alt:"Italy") %>
+									<% end %>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<%= link_to("#", class: "link-style") do %>
+						<i class="fa fa-heart"></i>My Wishlist
+					<% end %>
+				</li>
+				<li class="dropdown">
+					<%= link_to "Log in",'#',class: "link-style" %>
+				</li>
+				<li class="dropdown">
+					<%= link_to "Sign up",'#',class: "link-style" %>
+				</li>
+			</ul>	
+		</div>
+		<!-- End top link -->
+			
+	</div>
+	
+</div>
+<header id="header">
+	<div class="header-wrapper">
+		<div class="container clearfix">
+			<!-- logo -->
+			<div class="logo">
+				<h1 class="clearfix">
+					<a href="index.html">
+						<%#= image_tag("logo-white.png", alt:"logo") %>
+            <figure id="logo" class="columns six" data-hook><%= logo "logo-white.png" %></figure>
+					</a>
+				</h1>
+			</div>
+			<!--End logo -->
+			<div class="fright clearfix">
+				<div class="right-wrapper">
+					<!--<div class="wb-block">
+						<span>Welcome to EShop</span>
+					</div>-->
+					<div class="search"><!--Search-->
+						
+						<a href="#"><i class="fa fa-search"></i></a>
+						<form action="#" class="search-form">
+							<input type="search" name="s" class="s" placeholder="Search entry site here...">
+							<a href="#" class="search-close"><i class="fa fa-close"></i></a> 
+						</form>
+					</div><!--End Search-->
+					<div class="cart"><!--Start Cart-->
+						<a href="#">
+						<i class="fa fa-shopping-cart dropdown-toggle" data-toggle="dropdown"></i>
+						<span class="cart-block pull-right">
+							<span class="cart-num">0</span>
+						</span>
+						</a>
+						<div class="dropdown-menu">
+							<p>2 item(s) in your cart - $956.00</p>
+							<div class="product clearfix">
+								<a href="#"><i class="fa fa-close"></i></a>
+								<figure class="product-images">
+									<a href="#">
+										<%= image_tag("products/img-1.jpg",alt:"") %>
+									</a>
+								</figure>
+								<div class="product-detail">
+									<h5 class="product-name">
+										<a href="#">Product Name</a>
+									</h5>
+									<div class="product-rate">
+										<span>$478.00</span>
+									</div>
+								</div>
+							</div>
+							<div class="product clearfix">
+								<a href="#"><i class="fa fa-close"></i></a>
+								<figure class="product-images">
+									<a href="#">
+										<%= image_tag("products/img-1.jpg",alt:"") %>
+									</a>
+								</figure>
+								<div class="product-detail">
+									<h5 class="product-name">
+										<a href="#">Product Name</a>
+									</h5>
+									<div class="product-rate">
+										<span>$478.00</span>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix">
+								<ul class="pull-left action-info">
+									<li>
+										Shopping:
+										<span>$5.00</span>
+									</li>
+									<li>
+										Text:
+										<span>Free</span>
+									</li>
+									<li>
+										Total:
+										<span>$961.00</span>
+									</li>
+								</ul>
+								<ul class="pull-right action-btn">
+									<li><a href="#">Cart</a></li>
+									<li><a href="#">Checkout</a></li>
+								</ul>
+							</div>
+						</div>
+					</div><!--End Cart-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="navigation"><!-- Start navigation -->
+		<div class="container">
+			<nav class="main-nav">
+				<div class="reponsive-menu">
+					<a id="responsive-btn" href="#"><!-- Responsive nav button -->
+						<span class="responsive-btn-icon">
+							<span class="responsive-btn-block"></span>
+							<span class="responsive-btn-block"></span>
+							<span class="responsive-btn-block last"></span>
+						</span>
+						<span class="responsive-btn-text">Menu</span>
+					</a><!--End responsive nav button -->
+					<div id="responsive-menu-container">
+								
+				</div><!-- End responsive menu container -->
+			</div>
+			<ul class="menu clearfix">
+				<li>
+					<a href="#">Home</a>
+					<div class="sub-menu">
+						<ul>
+							<li><a href="index.html">Home-1</a></li>
+							<li><a href="index-version-2.html">Home-2</a></li>
+							<li><a href="index-version-3.html">Home-3</a></li>
+							<li><a href="index-version-4.html">Home-4</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="mega-nav full-width">
+					<a href="#">Women</a>
+						<div class="mega-menu"><!--Mega menu-->
+							<div class="container">
+								<div class="menu-container clearfix">
+									<ul class="col-md-2 col-sm-4">
+										<li><h5>Categories 1</h5></li>
+										<li><a href="#">My account</a></li>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Contact</a></li>
+										<li><a href="#">Sunglasses</a></li>
+										<li><a href="#">Blazers</a></li>
+										<li><a href="#">Shorts</a></li>
+									</ul>
+									<ul class="col-md-2 col-sm-4">
+										<li><h5>Categories 2</h5></li>
+										<li><a href="#">My account</a></li>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Contact</a></li>
+										<li><a href="#">Sunglasses</a></li>
+										<li><a href="#">Blazers</a></li>
+										<li><a href="#">Shorts</a></li>
+									</ul>
+									<ul class="col-md-2 col-sm-4">
+										<li><h5>Categories 3</h5></li>
+										<li><a href="#">My account</a></li>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Contact</a></li>
+										<li><a href="#">Sunglasses</a></li>
+										<li><a href="#">Blazers</a></li>
+										<li><a href="#">Shorts</a></li>
+									</ul>
+									<div class="menu-banner col-md-6">
+										<a href="#">
+											<%= image_tag("banner/menu-banner.jpg",alt:"") %>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="mega-nav full-width">
+						<a href="#">Man</a>
+						<div class="mega-menu"><!--Mega menu-->
+							<div class="container">
+								<div class="menu-container clearfix">
+									<ul class="col-sm-3">
+										<li class="banner-img"><%= image_tag("banner/menu-banner-1.jpg",alt:"") %><span></span></li>
+										<li><h5>Categories 1</h5></li>
+										<li><a href="#">My account</a></li>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Contact</a></li>
+									</ul>
+									<ul class="col-sm-3">
+										<li class="banner-img"><%= image_tag("banner/menu-banner-2.jpg",alt:"") %><span></span></li>
+										<li><h5>Categories 2</h5></li>
+										<li><a href="#">My account</a></li>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Contact</a></li>
+									</ul>
+									<ul class="col-sm-3">
+										<li class="banner-img"><%= image_tag("banner/menu-banner-3.jpg",alt:"") %><span></span></li>
+										<li><h5>Categories 3</h5></li>
+										<li><a href="#">My account</a></li>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Contact</a></li>
+									</ul>
+									<ul class="col-sm-3">
+										<li class="banner-img"><%= image_tag("banner/menu-banner-4.jpg",alt:"") %><span></span></li>
+										<li><h5>Categories 4</h5></li>
+										<li><a href="#">My account</a></li>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Contact</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><a href="#">Kids</a></li>
+					<li><a href="#">Blog</a></li>
+					<li class="mega-nav">
+						<a href="#">Page</a>
+						<div class="mega-menu"><!--Mega menu-->
+							<div class="container">
+								<div class="menu-container clearfix">
+									<ul class="col-md-3 col-sm-6">
+										<li><a href="index.html">Home Page</a></li>
+										<li><a href="product-grid-version-1.html">Categories - Grid View</a></li>
+										<li><a href="product-list-version-1.html">Categories - List View</a></li>
+										<li><a href="product-details-version-1.html">Product Details</a></li>
+										<li><a href="sign-in-version-1.html">Login Page</a></li>
+										<li><a href="404-version-1.html">404 Page</a></li>
+									</ul>
+									<ul class="col-md-3 col-sm-6">
+										<li><a href="checkout-version-1.html">Checkout Page</a></li>
+										<li><a href="shopping-cart-version-1.html">Cart Page</a></li>
+										<li><a href="blog-version-1.html">Blog Page</a></li>
+										<li><a href="blogdetails-version-1.html">Blog Single Page</a></li>
+										<li><a href="contact-version-1.html">Contact Page</a></li>
+										<li><a href="track-orders-version-1.html">Track Orders</a></li>
+									</ul>
+									<div class="menu-banner col-sm-6">
+										<a href="#">
+											<%= image_tag("banner/menu-banner-5.jpg",alt:"") %>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div class="offer"><a href="#">Todays offer</a></div>
+		</div>
+	</div><!-- End navigation -->
+</header>

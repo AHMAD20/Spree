@@ -1,0 +1,30 @@
+@import 'bootstrap';
+@import 'bootstrap-sprockets';
+@import 'font-awesome';
+
+.link-style{
+    text-decoration: none !important;
+}
+
+#test{
+    float:left;
+    background-color:red; 
+    width: 30%; 
+    display:inline !important;
+}
+
+/* .wrapper-breadcrumbs {
+    margin-bottom: 30px;
+} */
+.breadcrumbs-main ul {
+    display: inline-block;
+    margin-top: 0px !important;
+    float:left;
+    padding-left:10px;
+}
+
+.custom-border {
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
